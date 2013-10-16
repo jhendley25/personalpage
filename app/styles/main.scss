@@ -1,0 +1,8 @@
+$blue: #0033ff;
+$light-blue: lighten($blue, 15%);
+
+body {
+	margin: 0;
+	padding: 0;
+	background: $light-blue;
+}
