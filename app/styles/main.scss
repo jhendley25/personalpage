@@ -1,8 +1,92 @@
-$blue: #0033ff;
-$light-blue: lighten($blue, 15%);
+/*color scheme*/
+$blue: rgba(0, 137, 189, 1.0000);
+$light-gray: rgba(160, 175, 182, 1.0000);
+$dark-gray: rgba(89, 114, 126, 1.0000);
+$flat-yellow: rgba(197, 203, 45, 1.0000);
+$gradient1: linear-gradient(bottom, $light-gray, lighten($light-gray,10%));
+$gradient2: linear-gradient(top, $light-gray, lighten($light-gray,10%));
+
+
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300);
 
 body {
 	margin: 0;
 	padding: 0;
-	background: $light-blue;
+	background: $blue;
+	font-family: 'Roboto Slab', serif;
+}
+// .wrapper {
+// 	background: #000 url(../images/source-code.jpg) repeat-x;
+	
+	
+// }
+.container {
+	width: 1280px;
+	margin: 0 auto;
+	z-index: 88888;
+	// border: 1px solid red;
+}
+
+header {
+	height: 200px;
+	img {
+		z-index: 77777;
+	}
+
+
+}
+
+.right-title-content {
+	width: 70%;
+	height: 100%;
+	background: $gradient2;
+	float: right;
+	border-bottom-right-radius: 8px;
+	position: relative;
+	z-index: 55555;
+	.right-title {
+		height: 100%;
+	}
+	.right-shadow {
+		width: 92%;
+		float: right;
+		margin-right: 8px;
+		height: 1px;
+		z-index: 66666;
+
+		box-shadow: 1px 1px 1px $dark-gray;
+		border-radius: 10px;
+	}
+}
+.left-title {
+		display: inline-block;
+		width: 29%;
+		margin: 0;
+		h1 {
+			font-size: 150px;
+			margin: 0;
+			color: #fff;
+			text-shadow: 1px 1px #000;
+			span {
+				font-size: 100px;
+			}
+		}
+	}
+footer {
+	height: 400px;
+}
+
+.main {
+	height: 600px;
+}
+.left-content {
+	width: 35%;
+	height: 100%;
+	background: $gradient1;
+	border-top-left-radius: 8px;
+}
+
+.right-content {
+	width: 64%;
+	height: 100%;
 }
