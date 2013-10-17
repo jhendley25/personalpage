@@ -2,7 +2,7 @@
 $dark: rgba(0, 0, 2, 1.0000);
 $light-gray: rgba(195, 194, 190, 1.0000);
 $orange: rgba(234, 167, 50, 1.0000);
-$gradient1: linear-gradient(bottom, $light-gray, lighten($light-gray,10%));
+$gradient1: linear-gradient(top, $dark, lighten($light-gray,10%));
 $gradient2: linear-gradient(top, $light-gray, lighten($light-gray,10%));
 
 
@@ -11,7 +11,7 @@ $gradient2: linear-gradient(top, $light-gray, lighten($light-gray,10%));
 body{
 	margin: 0;
 	padding: 0;
-	background: $light-gray;
+	background: #0033ff;
 	font-family: 'Roboto Slab', serif;
 }
 
@@ -44,6 +44,7 @@ header {
 	border-bottom-left-radius: 8px;
 	position: relative;
 	z-index: 55555;
+	box-shadow: 0px 8px 6px -8px #000;
 
 	.right-title {
 
@@ -51,10 +52,11 @@ header {
 		h2 {
 			font-size: 80px;
 			margin-left: 50px;	
-		}
-		span {
 			color: $orange;
 			text-shadow: 2px 2px #fff;
+		}
+		span {
+			font-size: 50px;
 		}
 
 	}
