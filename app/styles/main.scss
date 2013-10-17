@@ -1,25 +1,24 @@
 /*color scheme*/
-$blue: rgba(0, 137, 189, 1.0000);
-$light-gray: rgba(160, 175, 182, 1.0000);
-$dark-gray: rgba(89, 114, 126, 1.0000);
-$flat-yellow: rgba(197, 203, 45, 1.0000);
+$dark: rgba(0, 0, 2, 1.0000);
+$light-gray: rgba(195, 194, 190, 1.0000);
+$orange: rgba(234, 167, 50, 1.0000);
 $gradient1: linear-gradient(bottom, $light-gray, lighten($light-gray,10%));
 $gradient2: linear-gradient(top, $light-gray, lighten($light-gray,10%));
 
 
 @import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300);
 
-body {
+body{
 	margin: 0;
 	padding: 0;
-	background: $blue;
+	background: $light-gray;
 	font-family: 'Roboto Slab', serif;
 }
-// .wrapper {
-// 	background: #000 url(../images/source-code.jpg) repeat-x;
-	
-	
-// }
+
+p {
+	display: inline-block;
+}
+
 .container {
 	width: 1280px;
 	margin: 0 auto;
@@ -42,10 +41,21 @@ header {
 	background: $gradient2;
 	float: right;
 	border-bottom-right-radius: 8px;
+	border-bottom-left-radius: 8px;
 	position: relative;
 	z-index: 55555;
+
 	.right-title {
 		height: 100%;
+		h2 {
+			font-size: 80px;
+			margin-left: 50px;	
+		}
+		span {
+			color: $orange;
+			text-shadow: 2px 2px #fff;
+		}
+
 	}
 	.right-shadow {
 		width: 92%;
@@ -54,7 +64,7 @@ header {
 		height: 1px;
 		z-index: 66666;
 
-		box-shadow: 1px 1px 1px $dark-gray;
+		box-shadow: 1px 1px 1px $dark;
 		border-radius: 10px;
 	}
 }
@@ -62,11 +72,12 @@ header {
 		display: inline-block;
 		width: 29%;
 		margin: 0;
+		float: left;
 		h1 {
 			font-size: 150px;
 			margin: 0;
 			color: #fff;
-			text-shadow: 1px 1px #000;
+			text-shadow: 3px 1px $orange;
 			span {
 				font-size: 100px;
 			}
@@ -82,11 +93,32 @@ footer {
 .left-content {
 	width: 35%;
 	height: 100%;
-	background: $gradient1;
+	// background: $gradient1;
 	border-top-left-radius: 8px;
+	padding: 10px;
+	p {
+		font-weight: 300;
+		color: $dark;
+	}
+	hr {
+		width: 70%;
+		color: #000;
+	}
 }
 
 .right-content {
 	width: 64%;
 	height: 100%;
+}
+
+.box-quote {
+	width: 70%;
+	height: auto;
+	text-align: center;
+	border: 1px solid darken($light-gray, 10%);
+	padding: 5px;
+	span {
+		color: darken($orange, 20%);
+		font-weight: 400;
+	}
 }
