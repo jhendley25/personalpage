@@ -104,6 +104,13 @@ footer {
 		width: 70%;
 		color: #000;
 	}
+	.climbing-photo {
+		width: 75%;
+		box-shadow: 1px 1px 1px darken($light-gray, 25%);
+	}
+	img {
+		width: 100%;
+	}
 }
 
 .right-content {
@@ -112,11 +119,16 @@ footer {
 }
 
 .box-quote {
-	width: 70%;
+	position: relative;
+	top: -120px;
+	width: 60%;
 	height: auto;
 	text-align: center;
-	border: 1px solid darken($light-gray, 10%);
+	// border: 1px solid darken($light-gray, 10%);
 	padding: 5px;
+	p {
+		color: $light-gray;
+	}
 	span {
 		color: darken($orange, 20%);
 		font-weight: 400;
