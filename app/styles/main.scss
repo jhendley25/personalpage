@@ -46,6 +46,7 @@ header {
 	z-index: 55555;
 
 	.right-title {
+
 		height: 100%;
 		h2 {
 			font-size: 80px;
@@ -96,6 +97,7 @@ footer {
 	// background: $gradient1;
 	border-top-left-radius: 8px;
 	padding: 10px;
+	float: left;
 	p {
 		font-weight: 300;
 		color: $dark;
@@ -113,8 +115,14 @@ footer {
 	}
 }
 
+.right-side {
+	width: 63%;
+	height: 100%;
+	float: right;
+}
 .right-content {
-	width: 64%;
+	width: 90%;
+	background: lighten($light-gray, 25%);
 	height: 100%;
 }
 
