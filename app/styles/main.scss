@@ -1,6 +1,8 @@
 /*color scheme*/
+$background: rgb(241, 238, 234);
 $dark: rgba(0, 0, 2, 1.0000);
 $light-gray: rgba(195, 194, 190, 1.0000);
+$o-light-gray: rgba(195, 194, 190, 0.8);
 $orange: rgba(234, 167, 50, 1.0000);
 $gradient1: linear-gradient(top, $dark, lighten($light-gray,10%));
 $gradient2: linear-gradient(top, $light-gray, lighten($light-gray,10%));
@@ -11,7 +13,7 @@ $gradient2: linear-gradient(top, $light-gray, lighten($light-gray,10%));
 body{
 	margin: 0;
 	padding: 0;
-	background: #0033ff;
+	background: $background;
 	font-family: 'Roboto Slab', serif;
 }
 
@@ -110,6 +112,7 @@ footer {
 	}
 	.climbing-photo {
 		width: 85%;
+		position: relative;
 		// box-shadow: 1px 1px 1px darken($light-gray, 25%);
 	}
 	img {
@@ -186,4 +189,23 @@ footer {
 	height: 100px;
 	position: relative;
 	top: -100px;
+}
+.about-me {
+	width: 90%;
+	margin-left: 5%;
+	margin-top: 5%;
+	height: 70%%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: $o-light-gray;
+	padding: 20px;
+	text-align: center;
+	color: $dark;
+	text-shadow: 0.5px 0.5px $orange;
+	box-sizing: border-box;
+	display: none;
+}
+#about {
+	cursor: pointer;
 }

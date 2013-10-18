@@ -15,5 +15,14 @@ $(function(){
 	      active: false
 		}
 	})
+
+	$("#about").hover( 
+		function(){
+			$(".about-me").fadeIn()
+			
+		}, function(){
+			$(".about-me").fadeOut()
+		}
+	)
 })
 
