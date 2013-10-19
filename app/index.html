@@ -12,6 +12,7 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <!-- build:css(.tmp) styles/main.css -->
         <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/flapper.css">
         <!-- endbuild -->
         <!-- build:js scripts/vendor/modernizr.js -->
         <script src="bower_components/modernizr/modernizr.js"></script>
@@ -87,19 +88,21 @@
             <div class="right-side">
 
                 <div class="right-content">
+
+
                     <div class="showcase">
                         <h3>My Work</h3>
+                    <div class="display">
+                         <input class="M" id="header_display" />
+                         <div class="work-caption"></div>
+                    </div>
                         
-                        <h4>GitHUD</h4>
-                        <img src="../images/gitHUD.png">
-                        <p>My first true foray into webapps.  GitHUD displays user repositories in a meaning way.  Currently a work-in-progress.</p><h4>Beta-fy!</h4>
-                        <img src="../images/hacakthon-app.png">
-                        <p>This was a weekend hackathon.  Very similar to your average todo app, but with a rock climbing twist.</p>
-                        
-                        <h4>Mobber</h4>
-                        <img src="../images/mobber.png">
-                        <p>I marked this up for practice with CSS layout jazz</p>
-                        
+                        <div id="work-slides">
+                            <img src="../images/gitHUD.png">
+                            <img src="../images/hacakthon-app.png">
+                            <img src="../images/mobber.png">
+                            
+                        </div>
                     </div>
 
 
@@ -131,9 +134,21 @@
             ga('create','UA-XXXXX-X');ga('send','pageview');
         </script>
 
+        <script type="text/template" id="githudDesc">
+            <p>My first true foray into webapps.  GitHUD displays user repositories in a meaning way.  Currently a work-in-progress.</p>
+        </script>
+        <script type="text/template" id="betafyDesc">
+            <p>This was a weekend hackathon.  Very similar to your average todo app, but with a rock climbing twist.</p>
+        </script>
+        <script type="text/template" id="mobberDesc">
+            <p>I marked this up for practice with CSS layout jazz</p>
+        </script>
+
         <!-- build:js scripts/main.js -->
         <script src="scripts/main.js"></script>
         <script src="scripts/jquery.slides.min.js"></script>
+        <script src="scripts/jquery.flapper.js"></script>
+        <script src="scripts/flapper.js"></script>
         <!-- endbuild -->
 </body>
 </html>

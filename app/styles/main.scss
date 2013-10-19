@@ -178,8 +178,8 @@ footer {
 		font-size: 30px;
 	}
 	img	{
-	border: 1px solid #000;
 		width: 100%;
+		margin-top: 30px;
 
 	}
 }
@@ -208,4 +208,10 @@ footer {
 }
 #about {
 	cursor: pointer;
+}
+
+.display {
+	width: 60%;
+	margin-left: 20%;
+	margin-top: 30px;
 }
