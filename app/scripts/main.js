@@ -19,16 +19,24 @@ $(function(){
 		width: 400,
 		height: 400,
 		navigation: {
-			active: false
+			active: false,
+			effect: "fade"
 		},
+		effect: {
+	      fade: {
+	        speed: 700
+	      }
+	    },
 		play: {
           active: false,
           auto: true,
           interval: 5000,
-          swap: true
+          swap: true,
+          effect: "fade"
         },
         pagination: {
-	      active: false
+	      active: false,
+	      effect: "fade"
 		}
 	})
 
