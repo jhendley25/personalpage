@@ -8,7 +8,7 @@ $(function(){
 		play: {
           active: false,
           auto: true,
-          interval: 3000,
+          interval: 8000,
           swap: true
         },
         pagination: {
