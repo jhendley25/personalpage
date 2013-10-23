@@ -22,10 +22,9 @@ p {
 }
 
 .container {
-	width: 1280px;
+	width: 100%;
 	margin: 0 auto;
 	z-index: 88888;
-	// border: 1px solid red;
 }
 
 header {
@@ -33,12 +32,11 @@ header {
 	img {
 		z-index: 77777;
 	}
-
-
 }
 
-.right-title-content {
-	width: 70%;
+.title-content {
+	width: 94%;
+    margin-right: 3%;
 	height: 100%;
 	background: $gradient2;
 	float: right;
@@ -47,47 +45,45 @@ header {
 	position: relative;
 	z-index: 55555;
 	box-shadow: 0px 8px 6px -8px #000;
+}
 
-	.right-title {
+.title {
 
-		height: 100%;
-		h2 {
-			font-size: 80px;
-			margin-left: 50px;	
-			color: $orange;
-			text-shadow: 2px 2px #fff;
-		}
+	height: 100%;
+	h2 {
+		font-size: 70px;
+		margin-left: 50px;
+		color: $orange;
+		text-shadow: 2px 2px #fff;
+        display: inline;
+	}
+    h1 {
+        display: inline-block;
+        font-size: 100px;
+        margin: 10px;
+        color: #fff;
+        text-shadow: 3px 1px $orange;
+        #small-caps {
+            font-size: 80px;
+        }
 		span {
 			font-size: 50px;
 		}
 
 	}
-	.right-shadow {
-		width: 92%;
-		float: right;
-		margin-right: 8px;
-		height: 1px;
-		z-index: 66666;
-
-		box-shadow: 1px 1px 1px $dark;
-		border-radius: 10px;
-	}
 }
-.left-title {
-		display: inline-block;
-		width: 29%;
-		margin: 0;
-		float: left;
-		h1 {
-			font-size: 150px;
-			margin: 0;
-			color: #fff;
-			text-shadow: 3px 1px $orange;
-			span {
-				font-size: 100px;
-			}
-		}
-	}
+
+.title-shadow {
+	width: 92%;
+	float: right;
+	margin-right: 8px;
+	height: 1px;
+	z-index: 66666;
+	box-shadow: 1px 1px 1px $dark;
+	border-radius: 10px;
+}
+
+
 footer {
 	height: 400px;
 }
@@ -120,14 +116,14 @@ footer {
 	}
 }
 
-.right-side {
-	width: 63%;
-	height: 100%;
-	float: right;
-	height: auto;
-}
-.right-content {
+.primary {
 	width: 90%;
+    margin-left: 5%;
+    // min-height: 800px;
+
+}
+.content {
+	width: 100%;
 	background: lighten($light-gray, 25%);
 	height: 100%;
 	text-align: center;
@@ -146,17 +142,19 @@ footer {
 	height: auto;
 	text-align: center;
 	margin-left: 10px;
-	// border: 1px solid darken($light-gray, 10%);
 	padding: 5px;
+
 	p {
 		color: $light-gray;
 	}
+
 	span {
 		color: darken($orange, 20%);
 		font-weight: 400;
 		font-size: 18px;
 	}
 }
+
 .sub-box-links {
 	width: 75%;
 	position: relative;
@@ -175,14 +173,19 @@ footer {
 }
 .showcase	{
 	padding: 10px;
-	h4	{
+    #name {
+        float: right;
+    }
+	h3	{
 		font-size: 30px;
 	}
 	img	{
 		width: 100%;
 		margin-top: 30px;
-
 	}
+    hr {
+        clear: both;
+    }
 }
 
 .tech-slideshow {
