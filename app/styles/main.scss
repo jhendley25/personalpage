@@ -2,7 +2,7 @@
 $background: rgb(241, 238, 234);
 $dark: rgba(0, 0, 2, 1.0000);
 $light-gray: rgba(195, 194, 190, 1.0000);
-$o-light-gray: rgba(195, 194, 190, 0.8);
+$o-light-gray: rgba(195, 194, 190, 0.7);
 $orange: rgba(234, 167, 50, 1.0000);
 $gradient1: linear-gradient(top, $dark, lighten($light-gray,10%));
 $gradient2: linear-gradient(top, $light-gray, lighten($light-gray,10%));
@@ -175,22 +175,7 @@ footer {
 	}
 }
 
-.sub-box-links {
-	width: 75%;
-	position: relative;
-	top: -136px;
-	left: 20px;
-	a {
-		color: darken($orange, 20%);
-		text-decoration: none;
-		&:hover {
-			text-decoration: underline;
-		}
-		&:visited {
-			text-decoration: none;
-		}
-	}
-}
+
 .showcase	{
 	padding: 10px;
     #name {
@@ -206,6 +191,20 @@ footer {
     hr {
         clear: both;
     }
+    a {
+        float: left;
+        margin: 0;
+        text-decoration: none;
+        color: $dark;
+        font-size: 25px;
+        text-shadow: 1.5px 1px $orange;
+        &:hover {
+            text-decoration: underline;
+        }
+        &:visited {
+            text-decoration: none;
+        }
+    }
 }
 
 .tech-slideshow {
@@ -214,25 +213,7 @@ footer {
 	position: relative;
 	top: -100px;
 }
-.about-me {
-	width: 90%;
-	margin-left: 5%;
-	margin-top: 5%;
-	height: 70%%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	background: $o-light-gray;
-	padding: 20px;
-	text-align: center;
-	color: $dark;
-	text-shadow: 0.5px 0.5px $orange;
-	box-sizing: border-box;
-	display: none;
-}
-#about {
-	cursor: pointer;
-}
+
 
 .display {
 	width: 60%;
@@ -249,4 +230,69 @@ footer {
 
     border: 0.5px solid $dark;
     box-shadow: 1px 1px 1px $dark;
+}
+
+footer {
+    height: 300px;
+    width: 90%;
+    margin-left: 5%;
+    background: $dark;
+    position: relative;
+    bottom: 0;
+    color: $light-gray;
+    // text-shadow: 0.5px 0.5px $orange;
+}
+
+.about-me {
+    width: 40%;
+    margin-left: 0%;
+    text-align: center;
+    display: inline-block;
+    h3 {
+        font-size: 30px;
+        color: $orange;
+        text-shadow: 0.5px 0.5px $light-gray;
+        margin: 0;
+    }
+}
+
+
+.link {
+
+
+        // margin-top: 25px;
+        text-decoration: none;
+        color: $light-gray;
+        font-size: 15px;
+        text-shadow: 0.5px 0.5px $orange;
+        &:hover {
+            text-decoration: underline;
+        }
+        &:visited {
+            text-decoration: none;
+        }
+
+}
+
+.contact {
+    display: inline-block;
+    text-align: center;
+    margin-right: 5%;
+    width: 40%;
+    float: right;
+    color: $light-gray;
+    font-size: 30px;
+    padding-top: 2%;
+
+    a {
+        text-decoration: none;
+        color: $orange;
+        &:hover {
+            text-decoration: underline;
+        }
+        &:visited {
+            text-decoration: none;
+        }
+    }
+
 }
