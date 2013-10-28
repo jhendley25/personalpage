@@ -1,20 +1,20 @@
 $(function(){
-	$("#slides").slidesjs({
-		width: 400,
-		height: 200,
-		navigation: {
-			active: false
-		},
-		play: {
-          active: false,
-          auto: true,
-          interval: 8000,
-          swap: true
-        },
-        pagination: {
-	      active: false
-		}
-	})
+	// $("#slides").slidesjs({
+	// 	width: 400,
+	// 	height: 200,
+	// 	navigation: {
+	// 		active: false
+	// 	},
+	// 	play: {
+ //          active: false,
+ //          auto: true,
+ //          interval: 8000,
+ //          swap: true
+ //        },
+ //        pagination: {
+	//       active: false
+	// 	}
+	// })
 	$("#work-slides").slidesjs({
 		width: 400,
 		height: 400,
@@ -40,7 +40,7 @@ $(function(){
 		}
 	})
 
-	$("#about").hover( 
+	$("#about").hover(
 		function(){
 			$(".about-me").fadeIn()
 
