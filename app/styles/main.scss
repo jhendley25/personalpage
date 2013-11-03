@@ -296,3 +296,21 @@ footer {
     }
 
 }
+
+@media (max-width: 1150px) {
+    .title {
+        line-height: 200px;
+    }
+    .title h2 {
+        font-size: 50px;
+    }
+    .title h1 {
+        font-size: 70px;
+    }
+    .title h1 #small-caps{
+        font-size: 50px;
+    }
+    .contact {
+        font-size: 20px;
+    }
+}

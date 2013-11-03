@@ -2,7 +2,7 @@ $(function(){
 	//setup defaults for flapper
 	var header_display = $('#header_display');
 		header_display.flapper({
-			width:6,
+			width:7,
 			chars_preset:'alpha',
 			align: 'left'
 		});
@@ -12,15 +12,15 @@ $(function(){
 		 var betafyDesc = _.template($("#betafyDesc").text())
 		 var mobberDesc = _.template($("#mobberDesc").text())
 
-		 //grab the caption div 
+		 //grab the caption div
 		 var caption = $(".work-caption")
 
 
 		 //set default display text for flapper and caption
 		header_display.val('GITHUD').change();
 		caption.append(githudDesc)
-		
-		
+
+
 				var i = 3
 			setInterval(function(){
 				if(i % 3 == 0){
@@ -29,7 +29,7 @@ $(function(){
 					caption.append(betafyDesc)
 					i += 1
 				}else if (i % 3 == 1){
-					header_display.val('MOBBER').change();
+					header_display.val('CHATAPP').change();
 					caption.html('')
 					caption.append(mobberDesc)
 					i += 1
@@ -39,7 +39,7 @@ $(function(){
 					caption.append(githudDesc)
 					i += 1
 				}
-			
+
 			},5000);
-		
+
 })
