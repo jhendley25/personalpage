@@ -10,7 +10,8 @@ $(function(){
 		//grab some templates
 		 var githudDesc = _.template($("#githudDesc").text())
 		 var betafyDesc = _.template($("#betafyDesc").text())
-		 var mobberDesc = _.template($("#mobberDesc").text())
+         var mobberDesc = _.template($("#mobberDesc").text())
+		 var ellipsisDesc = _.template($("#ellipsisDesc").text())
 
 		 //grab the caption div
 		 var caption = $(".work-caption")
@@ -21,24 +22,29 @@ $(function(){
 		caption.append(githudDesc)
 
 
-				var i = 3
+				var i = 1
 			setInterval(function(){
-				if(i % 3 == 0){
+				if(i == 1){
 					header_display.val('BETAFY').change()
 					caption.html('')
 					caption.append(betafyDesc)
 					i += 1
-				}else if (i % 3 == 1){
+				}else if (i == 2){
 					header_display.val('CHATAPP').change();
 					caption.html('')
 					caption.append(mobberDesc)
 					i += 1
-				}else {
-					header_display.val('GITHUD').change();
-					caption.html('')
-					caption.append(githudDesc)
-					i += 1
-				}
+				}else if (i == 3) {
+                    header_display.val('CHARTJS').change();
+                    caption.html('')
+                    caption.append(ellipsisDesc)
+                    i += 1
+                } else {
+                    header_display.val('GITHUD').change();
+                    caption.html('')
+                    caption.append(githudDesc)
+                    i = 1
+                }
 
 			},5000);
 
