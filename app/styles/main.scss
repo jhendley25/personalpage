@@ -8,12 +8,40 @@ $gradient1: linear-gradient(top, $dark, lighten($light-gray,10%));
 $gradient2: linear-gradient(top, $light-gray, lighten($light-gray,10%));
 
 
+$break-small: 320px; //modify these with proper sizes
+$break-ipad: 768px;
+$break-large: 1024px;
+
 @import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300);
 
 body{
 	margin: 0;
 	padding: 0;
 	font-family: 'Roboto Slab', serif;
+}
+
+@mixin respond-to($media) {
+  @if $media == handhelds {
+  @media only screen and (max-width: $break-small) { @content; }
+  }
+  @if $media == ipad {
+  @media only screen and (max-width: $break-ipad) { @content; }
+  }
+  @else if $media == medium-screens {
+  @media only screen and (min-width: $break-small + 1) and (max-width: $break-large - 1) { @content; }
+  }
+  @else if $media == wide-screens {
+  @media only screen and (min-width: $break-large) { @content; }
+  }
+}
+
+//mixin inclusion example
+.profile-pic {
+  float: left;
+  width: 250px;
+  @include respond-to(handhelds) { width: 100% ;}
+  @include respond-to(medium-screens) { width: 125px; }
+  @include respond-to(wide-screens) { float: none; }
 }
 
 #background-image {
@@ -45,6 +73,7 @@ p {
 	width: 100%;
 	margin: 0 auto;
 	z-index: 88888;
+
 }
 
 header {
@@ -76,6 +105,12 @@ header {
 		color: $orange;
 		text-shadow: 2px 2px #fff;
         display: inline;
+        span {
+            font-size: 50px;
+            @include respond-to(ipad) {
+                font-size: 20px;
+            }
+        }
 	}
     h1 {
         display: inline-block;
@@ -88,6 +123,9 @@ header {
         }
 		span {
 			font-size: 50px;
+            @include respond-to(ipad) {
+                font-size: 20px;
+            }
 		}
 
 	}
@@ -219,6 +257,11 @@ footer {
 	width: 60%;
 	margin-left: 20%;
 	margin-top: 30px;
+
+    @include respond-to(ipad) {
+        width: 90%;
+        margin-left: 5%;
+    }
 }
 
 .work-caption {
