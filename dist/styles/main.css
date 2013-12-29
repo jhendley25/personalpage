@@ -1,0 +1,487 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300);
+
+/*color scheme*/
+
+/* line 17, ../../app/styles/main.scss */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Slab', serif;
+}
+
+/* line 39, ../../app/styles/main.scss */
+
+.profile-pic {
+  float: left;
+  width: 250px;
+}
+
+@media only screen and (max-width: 320px) {
+  /* line 39, ../../app/styles/main.scss */
+
+  .profile-pic {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 1023px) {
+  /* line 39, ../../app/styles/main.scss */
+
+  .profile-pic {
+    width: 125px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 39, ../../app/styles/main.scss */
+
+  .profile-pic {
+    float: none;
+  }
+}
+
+/* line 47, ../../app/styles/main.scss */
+
+#background-image {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -55555;
+}
+
+/* line 57, ../../app/styles/main.scss */
+
+#background-image img {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 68, ../../app/styles/main.scss */
+
+p {
+  display: inline-block;
+}
+
+/* line 72, ../../app/styles/main.scss */
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  z-index: 88888;
+}
+
+/* line 79, ../../app/styles/main.scss */
+
+header {
+  height: 200px;
+}
+
+/* line 81, ../../app/styles/main.scss */
+
+header img {
+  z-index: 77777;
+}
+
+/* line 86, ../../app/styles/main.scss */
+
+.title-content {
+  width: 94%;
+  margin-right: 3%;
+  height: 100%;
+  background: -webkit-linear-gradient(top, #c3c2be, #dbdbd9);
+  background: linear-gradient(top, #c3c2be, #dbdbd9);
+  float: right;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  position: relative;
+  z-index: 55555;
+  box-shadow: 0px 8px 6px -8px #000;
+}
+
+/* line 99, ../../app/styles/main.scss */
+
+.title {
+  height: 100%;
+}
+
+/* line 102, ../../app/styles/main.scss */
+
+.title h2 {
+  font-size: 70px;
+  margin-left: 50px;
+  color: #eaa732;
+  text-shadow: 2px 2px #fff;
+  display: inline;
+}
+
+/* line 108, ../../app/styles/main.scss */
+
+.title h2 span {
+  font-size: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 108, ../../app/styles/main.scss */
+
+  .title h2 span {
+    font-size: 20px;
+  }
+}
+
+/* line 115, ../../app/styles/main.scss */
+
+.title h1 {
+  display: inline-block;
+  font-size: 100px;
+  margin: 10px;
+  color: #fff;
+  text-shadow: 3px 1px #eaa732;
+}
+
+/* line 121, ../../app/styles/main.scss */
+
+.title h1 #small-caps {
+  font-size: 80px;
+}
+
+/* line 124, ../../app/styles/main.scss */
+
+.title h1 span {
+  font-size: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 124, ../../app/styles/main.scss */
+
+  .title h1 span {
+    font-size: 20px;
+  }
+}
+
+/* line 134, ../../app/styles/main.scss */
+
+.title-shadow {
+  width: 92%;
+  float: right;
+  margin-right: 8px;
+  height: 1px;
+  z-index: 66666;
+  box-shadow: 1px 1px 1px #000002;
+  border-radius: 10px;
+}
+
+/* line 145, ../../app/styles/main.scss */
+
+footer {
+  height: 400px;
+}
+
+/* line 149, ../../app/styles/main.scss */
+
+.main {
+  height: 600px;
+}
+
+/* line 152, ../../app/styles/main.scss */
+
+.left-content {
+  width: 35%;
+  height: 100%;
+  border-top-left-radius: 8px;
+  padding: 10px;
+  float: left;
+}
+
+/* line 159, ../../app/styles/main.scss */
+
+.left-content p {
+  font-weight: 300;
+  color: #000002;
+}
+
+/* line 163, ../../app/styles/main.scss */
+
+.left-content hr {
+  width: 70%;
+  color: #000;
+}
+
+/* line 167, ../../app/styles/main.scss */
+
+.left-content .climbing-photo {
+  width: 85%;
+  position: relative;
+}
+
+/* line 172, ../../app/styles/main.scss */
+
+.left-content img {
+  width: 100%;
+}
+
+/* line 177, ../../app/styles/main.scss */
+
+.primary {
+  width: 90%;
+  margin-left: 5%;
+}
+
+/* line 183, ../../app/styles/main.scss */
+
+.content {
+  width: 100%;
+  background: rgba(195, 194, 190, 0.7);
+  height: 100%;
+  text-align: center;
+}
+
+/* line 188, ../../app/styles/main.scss */
+
+.content h3 {
+  margin: 0;
+  font-size: 40px;
+  text-shadow: 1.5px 1px #eaa732;
+}
+
+/* line 196, ../../app/styles/main.scss */
+
+.box-quote {
+  position: relative;
+  top: -120px;
+  width: 60%;
+  height: auto;
+  text-align: center;
+  margin-left: 10px;
+  padding: 5px;
+}
+
+/* line 205, ../../app/styles/main.scss */
+
+.box-quote p {
+  color: #c3c2be;
+}
+
+/* line 209, ../../app/styles/main.scss */
+
+.box-quote span {
+  color: #a56f11;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+/* line 217, ../../app/styles/main.scss */
+
+.showcase {
+  padding: 10px;
+}
+
+/* line 219, ../../app/styles/main.scss */
+
+.showcase #name {
+  float: right;
+}
+
+/* line 222, ../../app/styles/main.scss */
+
+.showcase h3 {
+  font-size: 30px;
+}
+
+/* line 225, ../../app/styles/main.scss */
+
+.showcase img {
+  width: 100%;
+  margin-top: 30px;
+}
+
+/* line 229, ../../app/styles/main.scss */
+
+.showcase hr {
+  clear: both;
+}
+
+/* line 232, ../../app/styles/main.scss */
+
+.showcase a {
+  float: left;
+  margin: 0;
+  text-decoration: none;
+  color: #000002;
+  font-size: 25px;
+  text-shadow: 1.5px 1px #eaa732;
+}
+
+/* line 239, ../../app/styles/main.scss */
+
+.showcase a:hover {
+  text-decoration: underline;
+}
+
+/* line 242, ../../app/styles/main.scss */
+
+.showcase a:visited {
+  text-decoration: none;
+}
+
+/* line 248, ../../app/styles/main.scss */
+
+.tech-slideshow {
+  width: 400px;
+  height: 100px;
+  position: relative;
+  top: -100px;
+}
+
+/* line 256, ../../app/styles/main.scss */
+
+.display {
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 256, ../../app/styles/main.scss */
+
+  .display {
+    width: 90%;
+    margin-left: 5%;
+  }
+}
+
+/* line 267, ../../app/styles/main.scss */
+
+.work-caption {
+  min-height: 75px;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 5%;
+  padding: 2px;
+  border: 0.5px solid #000002;
+  box-shadow: 1px 1px 1px #000002;
+}
+
+/* line 278, ../../app/styles/main.scss */
+
+footer {
+  height: 300px;
+  width: 90%;
+  margin-left: 5%;
+  background: #000002;
+  position: relative;
+  bottom: 0;
+  color: #c3c2be;
+}
+
+/* line 289, ../../app/styles/main.scss */
+
+.about-me {
+  width: 40%;
+  margin-left: 0%;
+  text-align: center;
+  display: inline-block;
+}
+
+/* line 294, ../../app/styles/main.scss */
+
+.about-me h3 {
+  font-size: 30px;
+  color: #eaa732;
+  text-shadow: 0.5px 0.5px #c3c2be;
+  margin: 0;
+}
+
+/* line 303, ../../app/styles/main.scss */
+
+.link {
+  text-decoration: none;
+  color: #c3c2be;
+  font-size: 15px;
+  text-shadow: 0.5px 0.5px #eaa732;
+}
+
+/* line 311, ../../app/styles/main.scss */
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/* line 314, ../../app/styles/main.scss */
+
+.link:visited {
+  text-decoration: none;
+}
+
+/* line 320, ../../app/styles/main.scss */
+
+.contact {
+  display: inline-block;
+  text-align: center;
+  margin-right: 5%;
+  width: 40%;
+  float: right;
+  color: #c3c2be;
+  font-size: 30px;
+  padding-top: 2%;
+}
+
+/* line 330, ../../app/styles/main.scss */
+
+.contact a {
+  text-decoration: none;
+  color: #eaa732;
+}
+
+/* line 333, ../../app/styles/main.scss */
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* line 336, ../../app/styles/main.scss */
+
+.contact a:visited {
+  text-decoration: none;
+}
+
+@media (max-width: 1150px) {
+  /* line 344, ../../app/styles/main.scss */
+
+  .title {
+    line-height: 200px;
+  }
+
+  /* line 347, ../../app/styles/main.scss */
+
+  .title h2 {
+    font-size: 50px;
+  }
+
+  /* line 350, ../../app/styles/main.scss */
+
+  .title h1 {
+    font-size: 70px;
+  }
+
+  /* line 353, ../../app/styles/main.scss */
+
+  .title h1 #small-caps {
+    font-size: 50px;
+  }
+
+  /* line 356, ../../app/styles/main.scss */
+
+  .contact {
+    font-size: 20px;
+  }
+}
